@@ -3,8 +3,8 @@
 }
 
 .reasons__name-list {
-  font: @Main-font;
-  font-size: 14px;
+  font-family: @main-font;
+  font-size: @main-font-size;
   line-height: 26px;
   color: @main-text;
   text-transform: uppercase;
@@ -26,11 +26,27 @@
   background-color: #eeeeee;
   padding-top: 29px;
   padding-bottom: 28px;
+
+  &--blue {
+    background-color: @site-theme;
+    padding-top: 45px;
+    padding-bottom: 0;
+
+    .reasons__number,
+    .reasons__title {
+      color: @white-color;
+    }
+
+    .reasons__desription {
+      color: @white-color;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .reasons__title {
-  font-family: @Main-font;
-  font-size: 18px;
+  font-family: @main-font;
+  font-size: @title-font-size;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -42,8 +58,8 @@
 .reasons__number {
   display: block;
 
-  font-family: @Main-font;
-  font-size: 14px;
+  font-family: @main-font;
+  font-size: @main-font-size;
   line-height: 21px;
   color: @main-text;
   text-transform: uppercase;
@@ -52,32 +68,13 @@
 }
 
 .reasons__desription {
-  font-family: @Main-font;
-  font-size: 14px;
+  font-family: @main-font;
+  font-size: @main-font-size;
   line-height: 21px;
   color: @main-text;
   text-transform: uppercase;
 
   margin: 0;
-}
-
-.reasons__number--blue {
-  color: @white-color;
-}
-
-.reasons__desription--blue {
-  color: @white-color;
-  margin-bottom: 40px;
-}
-
-.reasons__title--blue {
-  color: @white-color;
-}
-
-.reasons__item--blue {
-  background-color: @site-theme;
-  padding-top: 45px;
-  padding-bottom: 0;
 }
 
 .sublist {
@@ -88,8 +85,8 @@
 }
 
 .sublist__title {
-  font-family: @Main-font;
-  font-size: 18px;
+  font-family: @main-font;
+  font-size: @title-font-size;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -97,10 +94,28 @@
 }
 
 .sublist__description {
-  font-family: @Main-font;
-  font-size: 14px;
+  font-family: @main-font;
+  font-size: @main-font-size;
   line-height: 21px;
   color: @main-text;
   text-transform: uppercase;
   margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
 }
