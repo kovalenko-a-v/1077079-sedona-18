@@ -124,20 +124,28 @@
     }
   }
 
+  .gallery__post {
+    position: relative;
+  }
+
   .gallery__image-panel {
     position: absolute;
     width: 400px;
-    margin-top: -80px;
-    background-color: #eeeeee;
-    opacity: 0.3;
+    bottom: 0;
+    background-color: rgba(006, 001, 001, 0.3);
+    color: @white-color;
 
     &--big {
       position: absolute;
       width: 1200px;
-      margin-top: -80px;
-      background-color: #eeeeee;
-      opacity: 0.3;
+      bottom: 0;
+      background-color: rgba(006, 001, 001, 0.3);
+      color: @white-color;
     }
+  }
+
+  .gallery__author {
+    color: @white-color;
   }
 }
 
