@@ -1,5 +1,5 @@
 .gallery {
-  outline: 2px solid yellow;
+  width: @mobile-width;
 }
 
 .gallery__text {
@@ -8,9 +8,145 @@
   line-height: 24px;
   color: @main-text;
   text-transform: uppercase;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 28px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery__post {
+  font-family: @main-font;
+  font-size: @main-font-size;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 13px;
+}
+
+.gallery__image-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.gallery__like-counter {
+  font-weight: bold;
+}
+
+.gallery__author {
+  color: @main-text;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__text {
+    width: 435px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  .gallery {
+    width: 648px;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+
+  .gallery__item {
+    width: 324px;
+  }
+
+  .gallery__item:first-child {
+    width: 648px;
+  }
+
+  .gallery__post {
+    padding: 0;
+  }
+
+  .gallery__image {
+    width: 324px;
+    height: 267px;
+
+    &--big {
+      width: 648px;
+      height: 400px;
+    }
+  }
+
+  .gallery__image-name {
+    margin-left: 20px;
+  }
+
+  .gallery__author {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery {
+    width: 1200px;
+  }
+
+  .gallery__item {
+    width: 400px;
+  }
+
+  .gallery__item:first-child {
+    width: 1200px;
+  }
+
+  .gallery__image {
+    width: 400px;
+    height: 267px;
+
+    &--big {
+      width: 1200px;
+      height: 400px;
+    }
+  }
+
+  .gallery__post {
+    position: relative;
+  }
+
+  .gallery__image-panel {
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    background-color: rgba(006, 001, 001, 0.3);
+    color: @white-color;
+
+    &--big {
+      position: absolute;
+      width: 1200px;
+      bottom: 0;
+      background-color: rgba(006, 001, 001, 0.3);
+      color: @white-color;
+    }
+  }
+
+  .gallery__author {
+    color: @white-color;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
