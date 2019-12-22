@@ -8,7 +8,8 @@
   line-height: 24px;
   color: @main-text;
   text-transform: uppercase;
-  width: 280px;
+  width: 270px;
+  text-align: center;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 28px;
@@ -30,14 +31,27 @@
   margin: 0;
   padding: 0;
   padding-top: 22px;
-  padding-bottom: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .gallery__image-name {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 8px;
+}
+
+.gallery__like-panel {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery__like {
+  background-color: red;
+  width: 23px;
+  height: 21px;
+  margin-right: 15px;
 }
 
 .gallery__like-counter {
@@ -48,13 +62,14 @@
   color: @main-text;
   margin: 0;
   padding: 0;
+  margin-bottom: 6px;
 }
 
 @media (min-width: @tablet-width) {
   .gallery__text {
     width: 435px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
     text-align: center;
   }
 
@@ -82,7 +97,25 @@
     padding: 0;
   }
 
+  .gallery__image-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 7px;
+
+    &--big {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+  }
+
   .gallery__image {
+    display: block;
     width: 324px;
     height: 267px;
 
@@ -99,11 +132,23 @@
   .gallery__author {
     margin-left: 20px;
   }
+
+  .gallery__like-panel {
+    width: 86px;
+  }
+
+  .gallery__like {
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .gallery {
     width: 1200px;
+  }
+
+  .gallery__text {
+    margin-bottom: 70px;
   }
 
   .gallery__item {
@@ -119,6 +164,7 @@
     height: 267px;
 
     &--big {
+      display: block;
       width: 1200px;
       height: 400px;
     }
@@ -141,6 +187,10 @@
       bottom: 0;
       background-color: rgba(006, 001, 001, 0.3);
       color: @white-color;
+
+      .gallery__image-name {
+        padding-top: 11px;
+      }
     }
   }
 
