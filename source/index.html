@@ -19,7 +19,11 @@
             </li>
             <li class="site-list__item--panel">
               <a class="page-header__logo">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/83x102" width="102" height="83" alt="Седона - небольшой городок в Аризоне">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона - небольшой городок в Аризоне">
+                </picture>
               </a>
             </li>
             <li class="site-list__item">
@@ -33,6 +37,7 @@
         <button class="main-nav__toggle" type="button">Окрыть меню</button>
       </nav>
       <div class="page-header__image-label">
+        <img class="page-header__text-sedona" src="img/text-sedona-index.svg" width="280" height="130" alt="Седона">
       </div>
     </header>
     <main class="page-main">
@@ -49,7 +54,11 @@
               <span class="reasons__number">— №1 —</span>
               <p class="reasons__desription">Седона не атракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="reasons__item-image" src="https://via.placeholder.com/512x256" width="512" height="260" alt="Настоящий городок">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@1x.jpg 2x">
+              <img class="reasons__item-image" src="img/main-city-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Настоящий городок">
+            </picture>
             <ul class="reasons__item__sublist sublist">
               <li class="sublist__item sublist__item--house">
                 <h4 class="sublist__title">Жилье</h4>
@@ -71,7 +80,11 @@
               <span class="reasons__number">— №2 —</span>
               <p class="reasons__desription">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="reasons__item-image" src="https://via.placeholder.com/512x256" width="512" height="260" alt="Мост Дьявола">
+            <picture>
+                <source media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-city-bridge@1x.jpg 2x">
+                <img class="reasons__item-image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="512" height="260" alt="Мост Дьявола">
+            </picture>
           </li>
           <li class="reasons__item">
             <div class="reasons__item-panel">
