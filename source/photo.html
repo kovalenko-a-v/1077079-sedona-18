@@ -19,7 +19,7 @@
             </li>
             <li class="site-list__item--panel">
               <a class="page-header__logo">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/83x102" width="102" height="83" alt="Седона - небольшой городок в Аризоне">
+                <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона - небольшой городок в Аризоне">
               </a>
             </li>
             <li class="site-list__item">
@@ -32,8 +32,8 @@
           <button class="main-nav__toggle" type="button">Окрыть меню</button>
         </div>
       </nav>
-      <div class="page-header__image-label page-header__image-label--foto">
-        <img class="page-header__image-logo" src="https://via.placeholder.com/10x10" width="10" height="10" alt="Логотип Седоны" >
+      <div class="page-header__image-label page-header__image-label--inner">
+        <img class="page-header__text-sedona-inner" src="img/text-sedona.svg" widt="229" height="39" alt="Седона">
       </div>
     </header>
     <main class="page-main-foto">
@@ -47,7 +47,11 @@
           <ul class="gallery__list">
             <li class="gallery__item">
               <figure class="gallery__post">
-                <img class="gallery__image--big" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Неродные просторы">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="reasons__item-image--big" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280px" height="280" alt="Настоящий городок">
+                </picture>
                 <div class="gallery__image-panel--big">
                   <div class="gallery__image-description">
                     <p class="gallery__image-name">Неродные просторы</p>
@@ -62,7 +66,11 @@
             </li>
             <li class="gallery__item">
               <figure class="gallery__post">
-                <img class="gallery__image" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Местная растительность">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="reasons__item-image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280px" height="280" alt="Настоящий городок">
+                </picture>
                   <div class="gallery__image-panel">
                     <div class="gallery__image-description">
                       <p class="gallery__image-name">Местная растительность</p>
@@ -77,7 +85,11 @@
             </li>
             <li class="gallery__item">
               <figure class="gallery__post">
-                <img class="gallery__image" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Дорога на север">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img class="reasons__item-image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280px" height="280" alt="Настоящий городок">
+                </picture>
                 <div class="gallery__image-panel">
                   <div class="gallery__image-description">
                     <p class="gallery__image-name">Дорога на север</p>
@@ -92,7 +104,11 @@
             </li>
             <li class="gallery__item">
               <figure class="gallery__post">
-                <img class="gallery__image" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Мост дьявола">
+                  <picture>
+                      <source media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                      <img class="reasons__item-image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="280px" height="280" alt="Настоящий городок">
+                    </picture>
                 <div class="gallery__image-panel">
                   <div class="gallery__image-description">
                     <p class="gallery__image-name">Мост Дьявола</p>
