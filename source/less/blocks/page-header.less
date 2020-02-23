@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -16,9 +17,11 @@
 }
 
 .page-header__image-label {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
+  background-image:  url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 0 left 50%;
+  background-size: cover, cover;
   width: 320px;
   height: 389px;
   min-width: @mobile-width;
@@ -26,7 +29,7 @@
 
   &--inner {
     height: 158px;
-    background-position: top -230px left -228px;
+    background-position: bottom 0 center, center 0;
   }
 
   @media (min-resolution: @retina-dppx) {
@@ -51,16 +54,27 @@
   width: 229px;
 }
 
+.page-header__intro-triangle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 @media (min-width: @tablet-width) {
   .page-header__image-label {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../img/bg-intro-triangle-tablet.svg"),
+      url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 461px, center 0;
+    background-size: contain;
     height: 518px;
     min-width: @tablet-width;
 
     &--inner {
+      width: 768px;
       height: 290px;
-      background-position: top -228px left 0;
+      background-position: bottom 0 left 0, center 0;
+      background-size: contain, cover;
     }
 
     .page-header__text-sedona-inner {
@@ -89,6 +103,10 @@
     height: 350px;
     margin-top: 77px;
   }
+
+  .page-header__intro-triangle {
+    width: 768px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -98,8 +116,9 @@
   }
 
   .page-header__image-label {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../img/bg-intro-triangle-desktop.svg"),
+      url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
     height: 519px;
     width: 1200px;
 

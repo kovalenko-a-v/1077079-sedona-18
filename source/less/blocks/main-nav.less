@@ -14,12 +14,10 @@
   line-height: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  text-align: center;
   order: 0;
   border-bottom: 1px solid rgba(103, 143, 168, 0.39);
   border-top: 1px solid rgba(154, 194, 219, 0.3);
+  text-align: center;
   cursor: pointer;
 
   &--panel {
@@ -39,12 +37,14 @@
 }
 
 .site-list__item-link {
+  text-align: center;
   color: @white-color;
   text-decoration: none;
   margin: 0 auto;
 
   &:active {
     background-color: #5496bd;
+    opacity: 0.3;
   }
 }
 
@@ -121,6 +121,18 @@
   .main-nav--nojs .site-list__item {
     display: block;
   }
+
+  .site-list__item-link {
+    display: block;
+    width: 320px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    &:active {
+      background-color: #5496bd;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -151,6 +163,7 @@
   .site-list__item {
     width: 153px;
     border: none;
+    margin-top: 7px;
 
     &--panel {
       width: 102px;
@@ -171,6 +184,7 @@
 
     &--active {
       color: #766357;
+      cursor: default;
 
       &:hover {
         color: #604e43;

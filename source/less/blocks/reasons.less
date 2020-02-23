@@ -149,6 +149,14 @@
 }
 
 @media (max-width: @mobile-width-only) {
+  .reasons__item-panel {
+    &--triangle {
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: center top -20px;
+    }
+  }
+
   .sublist__item:last-child {
     padding-top: 0;
     padding-bottom: 34px;
@@ -228,10 +236,9 @@ input[type="radio"].visually-hidden {
     width: auto;
   }
 
-  /*.reasons__item-image {
-    width: 324px;
-    height: 400px;
-  }*/
+  .reasons__item-image {
+    height: 256px;
+  }
 
   .reasons__title {
     width: 120px;
@@ -295,7 +302,27 @@ input[type="radio"].visually-hidden {
     padding-top: 160px;
     padding-bottom: 60px;
     order: 0;
-    background-color: yellowgreen;
+
+    &--house::before {
+      width: 75px;
+      height: 72px;
+      top: 60px;
+      left: 91px;
+    }
+
+    &--food::before {
+      width: 77px;
+      height: 68px;
+      top: 64px;
+      left: 90px;
+    }
+
+    &--souvenirs::before {
+      width: 64px;
+      height: 75px;
+      top: 57px;
+      left: 95px;
+    }
   }
 
   .sublist__item:last-child {
@@ -346,6 +373,18 @@ input[type="radio"].visually-hidden {
   .sublist__item {
     width: 400px;
     padding-bottom: 80px;
+
+    &--house::before {
+      left: 161px;
+    }
+
+    &--food::before {
+      left: 160px;
+    }
+
+    &--souvenirs::before {
+      left: 165px;
+    }
   }
 
   .sublist__description {
