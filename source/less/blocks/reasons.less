@@ -71,7 +71,6 @@
   margin-bottom: 9px;
 }
 
-
 .reasons__number {
   display: block;
   font-family: @main-font;
@@ -108,45 +107,52 @@
   padding-right: 20px;
   padding-top: 30px;
 
-  &--house::before {
-    content: "";
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    width: 39px;
-    height: 37px;
-    background: url("../img/icon-house.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  &--house {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      width: 39px;
+      height: 37px;
+      background: url("../img/icon-house.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
-  &--souvenirs::before {
-    content: "";
-    position: absolute;
-    left: 25px;
-    top: 15px;
-    width: 32px;
-    height: 38px;
-    background: url("../img/icon-gift.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  &--souvenirs {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 25px;
+      top: 15px;
+      width: 32px;
+      height: 38px;
+      /*background: url("../img/icon-gift.svg");*/
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
-  &--food::before {
-    content: "";
-    position: absolute;
-    left: 18px;
-    top: -4px;
-    width: 40px;
-    height: 37px;
-    background: url("../img/icon-burger.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  &--food {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: -4px;
+      width: 40px;
+      height: 37px;
+      background: url("../img/icon-burger.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
+
 
 @media (max-width: @mobile-width-only) {
   .reasons__item-panel {
@@ -303,25 +309,31 @@ input[type="radio"].visually-hidden {
     padding-bottom: 60px;
     order: 0;
 
-    &--house::before {
+    &--house {
+      &::before {
       width: 75px;
       height: 72px;
       top: 60px;
       left: 91px;
+      }
     }
 
-    &--food::before {
+    &--food {
+      &::before {
       width: 77px;
       height: 68px;
       top: 64px;
       left: 90px;
+      }
     }
 
-    &--souvenirs::before {
-      width: 64px;
-      height: 75px;
-      top: 57px;
-      left: 95px;
+    &--souvenirs {
+      &::before {
+        width: 64px;
+        height: 75px;
+        top: 57px;
+        left: 95px;
+      }
     }
   }
 
@@ -374,16 +386,22 @@ input[type="radio"].visually-hidden {
     width: 400px;
     padding-bottom: 80px;
 
-    &--house::before {
+    &--house {
+      &::before {
       left: 161px;
+      }
     }
 
-    &--food::before {
+    &--food  {
+      &::before {
       left: 160px;
+      }
     }
 
-    &--souvenirs::before {
+    &--souvenirs {
+    &::before {
       left: 165px;
+    }
     }
   }
 
